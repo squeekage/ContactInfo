@@ -8,6 +8,7 @@
 </head>
 <body>
     <header>
+        <span class="title">Big Data</span>
         <nav>
             <ul>
                 <li><a href="https://github.com/squeekage" target="_blank">GitHub</a></li>
@@ -17,13 +18,31 @@
         </nav>
     </header>
     <main>
-        <h1>Send Us Your Info</h1>
-        <img class="mainImg" src="images/contact.png" alt="Update Your Contact Info" width="500" /><br /><br />
+        <h1>We Want to Know EVERYTHING About You</h1>
+        Enjoy free stuff while we make a killing on your personal information<br/>
+        <img class="mainImg" src="https://miro.medium.com/max/1400/1*cDO5wuA0NdevLb45zHRvog.jpeg" alt="We Are Big Data" width="500" /><br /><br />
         <form id="contactForm">
-            <h2>Your Contact Info</h2><br />
-            <span class="formTag">Name:</span> <input type="text" id="txtName" /><br />
-            <span class="formTag">Email:</span> <input type="text" id="txtEmail" /><br />
-            <input type="button" value="Update" class="button" />
+            <h2>Your Info</h2><br />
+            <span class="formTag">Name:</span> <span class="formInput"><input type="text" id="txtName" /></span><br />
+            <span class="formTag">Email:</span> <span class="formInput"><input type="text" id="txtEmail" /></span><br />
+            <span class="formTag">Birthday:</span> <span class="formInput"><input type="date" id="txtBirthday" /></span><br />
+            <span class="formTag">Gender:</span> <span class="formInput"><input type="radio" name="rdGender" id="rdMale" value="Male" /><label for="rdMale">Male</label><input type="radio" name="rdGender" id="rdFemale" value="Female" /><label for="rdFemale">Female</label><input type="radio" name="rdGender" id="rdOther" value="Other" /><label for="rdOther">Other</label></span><br />
+            <span class="formTag">Favorite Color:</span> <span class="formInput"><input type="text" id="txtColor" /></span><br />
+            <span class="formTag">Location:</span> <span class="formInput"><input type="text" id="txtLocation" /></span><br />
+            <span class="formTag">Yearly Income:</span> <span class="formInput"><input type="text" id="txtIncome" /></span><br />
+            <span class="formTag">Mother's Maiden Name:</span> <span class="formInput"><input type="text" id="txtMother" /></span><br />
+            <span class="formTag">Marital Status:</span> <span class="formInput">
+                <select id="ddMaritalStatus">
+                    <option value="">Select One</option>
+                    <option value="Married">Married</option>
+                    <option value="Single">Single</option>
+                    <option value="Divorced">Divorced</option>
+                    <option value="Widowed">Widowed</option>
+                </select>
+            </span><br />
+            <span class="formTag">Favorite Band:</span> <span class="formInput"><input type="text" id="txtBand" /></span><br />
+            <span class="formTag">Pets:</span> <span class="formInput"><input type="checkbox" name="cbPets" id="cbDog" /><label for="cbDog">Dog</label><input type="checkbox" name="cbPets" id="cbCat" /><label for="cbCat">Cat</label><input type="checkbox" name="cbPets" id="cbBird" /><label for="cbBird">Bird</label><input type="checkbox" name="cbPets" id="cbFish" /><label for="cbFish">Fish</label><input type="checkbox" name="cbPets" id="cbSnake" /><label for="cbSnake">Snake</label><input type="checkbox" name="cbPets" id="cbRodent" /><label for="cbRodent">Small Rodent</label><br /><input type="checkbox" name="cbPets" id="cbExotic" /><label for="cbExotic">Exotic Animal</label></span><br />
+            <input type="button" value="Update" class="button" onclick="alert('Thank you very much. We promise not to do anything sketchy, but we prefer to keep everything we do with your information a secret.\n\nHave a nice day!')" />
         </form><br /><br />
     </main>
     <footer>
